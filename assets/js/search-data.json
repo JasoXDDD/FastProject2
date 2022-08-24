@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Test notebook post",
+            "title": "Test Notebook Post",
             "content": "print(&#39;hello world&#39;) .",
             "url": "https://jasoxddd.github.io/FastProject2/jupyter/2022/08/23/new-notebook.html",
             "relUrl": "/jupyter/2022/08/23/new-notebook.html",
