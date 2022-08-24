@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Test Notebook Post",
-            "content": "print(&#39;hello world&#39;) .",
+            "content": "About . This notebook is a demonstration of some of capabilities of fastpages with notebooks. . With fastpages you can save your jupyter notebooks into the _notebooks folder at the root of your repository, and they will be automatically be converted to Jekyll compliant blog posts! . print(&#39;hello world&#39;) . hello world .",
             "url": "https://jasoxddd.github.io/FastProject2/jupyter/2022/08/23/new-notebook.html",
             "relUrl": "/jupyter/2022/08/23/new-notebook.html",
             "date": " • Aug 23, 2022"
