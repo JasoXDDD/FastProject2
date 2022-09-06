@@ -5,7 +5,7 @@ description: The hellishly confusing bell schedule
 categories: [markdown]
 title: Del Norte Bell Schedule
 ---
-Below are the (really confusing bell schedule for Del Norte
+Below are the (really confusing) bell schedule for Del Norte
 
 ## Monday, Tuesday, Thursday
 
