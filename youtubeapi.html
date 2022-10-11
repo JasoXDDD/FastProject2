@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      19 min read
+      17 min read
     
 </span></p>
 
@@ -136,26 +136,26 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kr">import</span> <span class="nx">requests</span> <span class="err">#</span> <span class="nx">imports</span> <span class="nx">the</span> <span class="nx">module</span> <span class="nx">necessary</span> <span class="k">for</span> <span class="nx">API</span>
-<span class="kr">import</span> <span class="nx">json</span>
-<span class="err">#</span> <span class="nx">Below</span> <span class="nx">is</span> <span class="nx">the</span> <span class="nx">constants</span>
-<span class="nx">method</span> <span class="o">=</span> <span class="s1">&#39;GET&#39;</span>
-<span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://youtube138.p.rapidapi.com/search/&#39;</span>
-<span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;q&quot;</span><span class="o">:</span> <span class="s1">&#39;despacito&#39;</span><span class="p">,</span> 
-    <span class="s2">&quot;hl&quot;</span><span class="o">:</span> <span class="s1">&#39;en&#39;</span><span class="p">,</span> 
-    <span class="s2">&quot;gl&quot;</span><span class="o">:</span> <span class="s1">&#39;US&#39;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># imports the module necessary for API</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="c1"># Below is the constants</span>
+<span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;GET&#39;</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://youtube138.p.rapidapi.com/search/&#39;</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="s1">&#39;despacito&#39;</span><span class="p">,</span> 
+    <span class="s2">&quot;hl&quot;</span><span class="p">:</span> <span class="s1">&#39;en&#39;</span><span class="p">,</span> 
+    <span class="s2">&quot;gl&quot;</span><span class="p">:</span> <span class="s1">&#39;US&#39;</span>
 <span class="p">}</span>
-<span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;X-RapidAPI-Key&#39;</span><span class="o">:</span> <span class="s1">&#39;6615470177msh2eb9d9776c82332p163317jsn65585d1a22d9&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;X-RapidAPI-Host&#39;</span><span class="o">:</span> <span class="s1">&#39;youtube138.p.rapidapi.com&#39;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;X-RapidAPI-Key&#39;</span><span class="p">:</span> <span class="s1">&#39;6615470177msh2eb9d9776c82332p163317jsn65585d1a22d9&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;X-RapidAPI-Host&#39;</span><span class="p">:</span> <span class="s1">&#39;youtube138.p.rapidapi.com&#39;</span>
 <span class="p">}</span>
 
-<span class="err">#</span> <span class="nx">Pull</span> <span class="nx">the</span>
-<span class="nx">response</span> <span class="o">=</span> <span class="nx">requests</span><span class="p">.</span><span class="nx">request</span><span class="p">(</span><span class="nx">method</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">headers</span><span class="o">=</span><span class="nx">headers</span><span class="p">,</span><span class="nx">params</span><span class="o">=</span><span class="nx">params</span><span class="p">)</span>
-<span class="nx">print</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">text</span><span class="p">)</span>
-<span class="err">#</span> <span class="nx">End</span> <span class="nx">Rapid</span> <span class="nx">API</span> <span class="nx">Code</span>
-<span class="nx">json</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">()</span>
+<span class="c1"># Pull the</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span><span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="c1"># End Rapid API Code</span>
+<span class="n">json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -193,40 +193,40 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">def</span> <span class="nx">print_result</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Result Type: &quot;</span><span class="p">,</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">])</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Author: &quot;</span> <span class="o">+</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;author&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Thumbnail: &quot;</span> <span class="o">+</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;thumbnails&quot;</span><span class="p">][</span><span class="mf">0</span><span class="p">][</span><span class="s2">&quot;url&quot;</span><span class="p">])</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Title: &quot;</span> <span class="o">+</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
-    <span class="nx">views</span><span class="o">=</span><span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;stats&quot;</span><span class="p">][</span><span class="s2">&quot;views&quot;</span><span class="p">]</span>
-    <span class="k">if</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000000000</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//1000000000)+&#39;B&#39;)</span>
-    <span class="nx">elif</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000000</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//1000000)+&#39;M&#39;)</span>
-    <span class="nx">elif</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//100)+&#39;K&#39;)</span>
-    <span class="k">else</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="p">))</span>
-    <span class="nx">length</span><span class="o">=</span><span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;lengthSeconds&quot;</span><span class="p">]</span>
-    <span class="k">if</span> <span class="nx">length</span><span class="o">%</span><span class="mf">60</span><span class="o">&lt;</span><span class="mf">10</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Length: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">length</span><span class="c1">//60)+&#39;:0&#39;+str(length%60))</span>
-    <span class="k">else</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Length: &quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">length</span><span class="c1">//60)+&#39;:&#39;+str(length%60))</span>
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">print_result</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result Type: &quot;</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Author: &quot;</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;author&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Thumbnail: &quot;</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;thumbnails&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;url&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Title: &quot;</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
+    <span class="n">views</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;stats&quot;</span><span class="p">][</span><span class="s2">&quot;views&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000000000</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">1000000000</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;B&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000000</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">1000000</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;M&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">100</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Views: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="p">))</span>
+    <span class="n">length</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;lengthSeconds&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Length: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">//</span><span class="mi">60</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;:0&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Length: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">//</span><span class="mi">60</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="p">))</span>
     
-<span class="k">try</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;JSON data is Python type: &quot;</span> <span class="o">+</span> <span class="nx">str</span><span class="p">(</span><span class="nx">type</span><span class="p">(</span><span class="nx">json</span><span class="p">)))</span> <span class="err">#</span> <span class="nx">Test</span> <span class="k">if</span> <span class="nx">json</span> <span class="nx">is</span> <span class="nx">processed</span> <span class="nx">successfully</span>
-    <span class="k">try</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-        <span class="err">#</span> <span class="nx">For</span> <span class="nx">each</span> <span class="nx">video</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">json</span><span class="p">,</span> <span class="nx">view</span> <span class="nx">the</span> <span class="nx">results</span> <span class="nx">using</span> <span class="nx">print_results</span>
-        <span class="k">for</span> <span class="nx">video</span> <span class="k">in</span> <span class="nx">json</span><span class="p">[</span><span class="s1">&#39;contents&#39;</span><span class="p">]</span><span class="o">:</span>
-            <span class="nx">print_result</span><span class="p">(</span><span class="nx">video</span><span class="p">)</span>
-            <span class="nx">print</span><span class="p">()</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;JSON data is Python type: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">json</span><span class="p">)))</span> <span class="c1"># Test if json is processed successfully</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># For each video in the json, view the results using print_results</span>
+        <span class="k">for</span> <span class="n">video</span> <span class="ow">in</span> <span class="n">json</span><span class="p">[</span><span class="s1">&#39;contents&#39;</span><span class="p">]:</span>
+            <span class="n">print_result</span><span class="p">(</span><span class="n">video</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">()</span>
             
-    <span class="nx">except</span><span class="o">:</span>
-        <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Did you insert a valid key in X-RapidAPI-Key of API cell above?&quot;</span><span class="p">)</span>
-        <span class="nx">print</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span>
-<span class="nx">except</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;This cell is dependent on running API call in cell above!&quot;</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Did you insert a valid key in X-RapidAPI-Key of API cell above?&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This cell is dependent on running API call in cell above!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -552,43 +552,46 @@ Length: 3:49
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">def</span> <span class="nx">json_of_results</span><span class="p">(</span><span class="nx">j</span><span class="p">)</span><span class="o">:</span>
-    <span class="nx">results</span><span class="o">=</span><span class="p">{}</span>
-    <span class="nx">videos</span><span class="o">=</span><span class="p">[]</span>
-    <span class="k">for</span> <span class="nx">v</span> <span class="k">in</span> <span class="nx">j</span><span class="p">[</span><span class="s2">&quot;contents&quot;</span><span class="p">]</span><span class="o">:</span>
-        <span class="nx">video</span><span class="o">=</span><span class="p">{}</span>
-        <span class="nx">video</span><span class="p">[</span><span class="s2">&quot;thumburl&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;thumbnails&quot;</span><span class="p">][</span><span class="mf">0</span><span class="p">][</span><span class="s2">&quot;url&quot;</span><span class="p">]</span>
-        <span class="nx">video</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
-        <span class="nx">video</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;author&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
-        <span class="nx">views</span><span class="o">=</span><span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;stats&quot;</span><span class="p">][</span><span class="s2">&quot;views&quot;</span><span class="p">]</span>
-        <span class="k">if</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000000000</span><span class="o">:</span>
-            <span class="nx">viewString</span><span class="o">=</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//1000000000)+&#39;B&#39;</span>
-        <span class="nx">elif</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000000</span><span class="o">:</span>
-            <span class="nx">viewString</span><span class="o">=</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//1000000)+&#39;M&#39;</span>
-        <span class="nx">elif</span> <span class="nx">views</span><span class="o">&gt;</span><span class="mf">1000</span><span class="o">:</span>
-            <span class="nx">viewString</span><span class="o">=</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="c1">//1000)+&#39;K&#39;</span>
-        <span class="k">else</span><span class="o">:</span>
-            <span class="nx">viewString</span><span class="o">=</span><span class="nx">str</span><span class="p">(</span><span class="nx">views</span><span class="p">)</span>
-        <span class="nx">video</span><span class="p">[</span><span class="s2">&quot;viewsString&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">viewString</span>
-        <span class="nx">length</span><span class="o">=</span><span class="nx">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;lengthSeconds&quot;</span><span class="p">]</span>
-        <span class="k">if</span> <span class="nx">length</span><span class="o">%</span><span class="mf">60</span><span class="o">&lt;</span><span class="mf">10</span><span class="o">:</span>
-            <span class="nx">lengthString</span> <span class="o">=</span> <span class="nx">str</span><span class="p">(</span><span class="nx">length</span><span class="c1">//60)+&#39;:0&#39;+str(length%60)</span>
-        <span class="k">else</span><span class="o">:</span>
-            <span class="nx">lengthString</span> <span class="o">=</span> <span class="nx">str</span><span class="p">(</span><span class="nx">length</span><span class="c1">//60)+&#39;:&#39;+str(length%60)</span>
-        <span class="nx">video</span><span class="p">[</span><span class="s2">&quot;lengthString&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">lengthString</span>
-        <span class="nx">videos</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">video</span><span class="p">)</span>
-    <span class="nx">results</span><span class="p">[</span><span class="s2">&quot;videos&quot;</span><span class="p">]</span><span class="o">=</span><span class="nx">videos</span>
-    <span class="k">return</span> <span class="nx">results</span>
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">transfer</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">json</span>
+    <span class="k">return</span> <span class="n">json_of_results</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">json_of_results</span><span class="p">(</span><span class="n">j</span><span class="p">):</span>
+    <span class="n">results</span><span class="o">=</span><span class="p">{}</span>
+    <span class="n">videos</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">j</span><span class="p">[</span><span class="s2">&quot;contents&quot;</span><span class="p">]:</span>
+        <span class="n">video</span><span class="o">=</span><span class="p">{}</span>
+        <span class="n">video</span><span class="p">[</span><span class="s2">&quot;thumburl&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;thumbnails&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;url&quot;</span><span class="p">]</span>
+        <span class="n">video</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+        <span class="n">video</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;author&quot;</span><span class="p">][</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+        <span class="n">views</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;stats&quot;</span><span class="p">][</span><span class="s2">&quot;views&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000000000</span><span class="p">:</span>
+            <span class="n">viewString</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">1000000000</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;B&#39;</span>
+        <span class="k">elif</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000000</span><span class="p">:</span>
+            <span class="n">viewString</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">1000000</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;M&#39;</span>
+        <span class="k">elif</span> <span class="n">views</span><span class="o">&gt;</span><span class="mi">1000</span><span class="p">:</span>
+            <span class="n">viewString</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="o">//</span><span class="mi">1000</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">viewString</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">views</span><span class="p">)</span>
+        <span class="n">video</span><span class="p">[</span><span class="s2">&quot;viewsString&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">viewString</span>
+        <span class="n">length</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="s2">&quot;video&quot;</span><span class="p">][</span><span class="s2">&quot;lengthSeconds&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+            <span class="n">lengthString</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">//</span><span class="mi">60</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;:0&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">lengthString</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">//</span><span class="mi">60</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">length</span><span class="o">%</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">video</span><span class="p">[</span><span class="s2">&quot;lengthString&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lengthString</span>
+        <span class="n">videos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">video</span><span class="p">)</span>
+    <span class="n">results</span><span class="p">[</span><span class="s2">&quot;videos&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">videos</span>
+    <span class="k">return</span> <span class="n">results</span>
 
-<span class="k">try</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Example Needed variables&quot;</span><span class="p">)</span>
-    <span class="nx">print_result</span><span class="p">(</span><span class="nx">json</span><span class="p">[</span><span class="s2">&quot;contents&quot;</span><span class="p">][</span><span class="mf">0</span><span class="p">])</span> <span class="err">#</span> <span class="nx">Test</span> <span class="k">if</span> <span class="nx">json</span> <span class="nx">is</span> <span class="nx">processed</span> <span class="nx">successfully</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Example Needed variables&quot;</span><span class="p">)</span>
+    <span class="n">print_result</span><span class="p">(</span><span class="n">json</span><span class="p">[</span><span class="s2">&quot;contents&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># Test if json is processed successfully</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
     
-    <span class="nx">video_dict</span><span class="o">=</span><span class="nx">json_of_results</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span>
-    <span class="nx">vid_json</span><span class="o">=</span><span class="nx">json</span><span class="p">.</span><span class="nx">dumps</span><span class="p">(</span><span class="nx">video_dict</span><span class="p">)</span>
-<span class="nx">except</span><span class="o">:</span>
-    <span class="nx">print</span><span class="p">(</span><span class="s2">&quot;This cell is dependent on running API call in cell above!&quot;</span><span class="p">)</span>
+    <span class="n">video_dict</span><span class="o">=</span><span class="n">json_of_results</span><span class="p">(</span><span class="n">json</span><span class="p">)</span>
+    <span class="n">vid_json</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">video_dict</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This cell is dependent on running API call in cell above!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -614,110 +617,6 @@ Length: 4:42
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">Jupyter</span><span class="p">.</span><span class="nx">notebook</span><span class="p">.</span><span class="nx">kernel</span><span class="p">.</span><span class="nx">execute</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-evalmachine.&lt;anonymous&gt;:1
-console.log(vid_json)
-            ^
-
-ReferenceError: vid_json is not defined
-    at evalmachine.&lt;anonymous&gt;:1:13
-    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
-    at Object.runInThisContext (vm.js:97:38)
-    at run ([eval]:1020:15)
-    at onRunRequest ([eval]:864:18)
-    at onMessage ([eval]:828:13)
-    at emitTwo (events.js:106:13)
-    at process.emit (events.js:191:7)
-    at process.nextTick (internal/child_process.js:758:12)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Table-of-Data-using-Javascript">Table of Data using Javascript<a class="anchor-link" href="#Table-of-Data-using-Javascript"> </a></h2><p>A table created with Javascript showing the data that is formatted from the Youtube API</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">&quot;display:inline-block;&quot;</span> <span class="o">+</span>
-    <span class="s2">&quot;background:white;&quot;</span> <span class="o">+</span>
-    <span class="s2">&quot;border: 2px solid grey;&quot;</span>
-    <span class="p">);</span>
-    
-    <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
-    <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-    <span class="c1">// Heading for Array Columns</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Thumbnail&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Title&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Author&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Views&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Length&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
-    <span class="c1">// Data of Array, iterate through each row of compsci.classroom </span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">item</span> <span class="k">of</span> <span class="nx">Inventory</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// tr for each row, a new line</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-        <span class="c1">// td for each column of data</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="nx">atk</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="nx">price</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="nx">description</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-        <span class="c1">// tr to end line</span>
-        <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="nx">htmlFrag</span><span class="o">=</span><span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
-        <span class="s2">&quot;&lt;table&gt;&quot;</span> <span class="o">+</span>
-        <span class="nx">body</span> <span class="o">+</span>
-        <span class="s2">&quot;&lt;/table&gt;&quot;</span> <span class="o">+</span>
-    <span class="s2">&quot;&lt;/div&gt;&quot;</span>
-    
-    <span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">htmlFrag</span><span class="p">);</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
