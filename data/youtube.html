@@ -75,23 +75,7 @@ window.onload = wrap_img;
         <p>A table created using the fetch function from javascript. ssjsjsj</p>
 
 <!-- HTML table fragment for page -->
-<table>
-  <thead>
-  <tr>
-    <th>Time</th>
-    <th>All-time Cases</th>
-    <th>Recorded Deaths</th>
-    <th>Active Cases</th>
-  </tr>
-  </thead>
-  <tbody>
-    <td id="thumbnail"></td>
-    <td id="title"></td>
-    <td id="creator"></td>
-    <td id="views"></td>
-    <td id="length"><td> 
-  &lt;/tbody&gt;
-&lt;/table&gt;
+<p id="clock"></p>
 
 <table>
   <thead>
@@ -197,8 +181,18 @@ window.onload = wrap_img;
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   });
+  let clockElement = document.getElementById('clock')
+  // Execute clock function on load
+  clock();
+  // Clock update executes on each interval set by timer
+  function clock() {
+      let date = new Date();
+      clockElement.textContent = date.toLocaleString();
+  }
+  // Clock refresh timer, a reoccurring event
+  setInterval(clock, 1000);
 </script>
-</td></td></tbody></table>
+
 
       </div>
     </main><footer class="site-footer h-card">
