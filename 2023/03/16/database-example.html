@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -99,7 +99,7 @@
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">database</span> <span class="o">=</span> <span class="s1">'cars.db'</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'sqlite.db'</span>
 
 
 <span class="k">def</span> <span class="nf">create_design</span><span class="p">(</span><span class="n">designation</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">max_speed</span><span class="p">,</span> <span class="n">designe</span><span class="p">):</span>
@@ -193,6 +193,34 @@
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 23&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span>     c.close()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span>     conn.close()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span> read_design(1)
+
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 6</span> in <span class="ansi-cyan-fg">read_design</span><span class="ansi-blue-fg">(id)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> c = conn.cursor()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> # Execute a SELECT statement to retrieve data from a table
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> results = c.execute('SELECT * FROM cars').fetchall()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> # Print the results
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W4sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> if len(results) == 0:
+
+<span class="ansi-red-fg">OperationalError</span>: no such table: cars</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -245,10 +273,23 @@
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, 'U-2', 120000000, 480, 'Lockheed')
-None
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 21&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     c.close()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=18'&gt;19&lt;/a&gt;</span>     conn.close()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span> update_design(2, None, None, 498)
+
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 8</span> in <span class="ansi-cyan-fg">update_design</span><span class="ansi-blue-fg">(design_id, designation, price, max_speed)</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     update_dict["max_speed"] = max_speed
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> update_str = ", ".join([f"{col}=? " for col in update_dict.keys()])
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> c.execute(f"UPDATE cars SET {update_str} WHERE id=?", (*update_dict.values(), design_id))
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> conn.commit()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#W6sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> print(read_design(design_id))
+
+<span class="ansi-red-fg">OperationalError</span>: no such table: cars</pre>
 </div>
 </div>
 
@@ -297,10 +338,30 @@ None
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(2, 'U-2', 120000000, 475, 'Lockheed')
-None
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 10</span> in <span class="ansi-cyan-fg">&lt;cell line: 11&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     conn.commit()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     conn.close()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> delete_design(2)
+
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 10</span> in <span class="ansi-cyan-fg">delete_design</span><span class="ansi-blue-fg">(design_id)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> conn = sqlite3.connect(database)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> c = conn.cursor()
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> print(read_design(design_id))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> c.execute("DELETE FROM planes WHERE id=?", (design_id,))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> conn.commit()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb Cell 10</span> in <span class="ansi-cyan-fg">read_design</span><span class="ansi-blue-fg">(id)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> c = conn.cursor()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> # Execute a SELECT statement to retrieve data from a table
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> results = c.execute('SELECT * FROM cars').fetchall()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> # Print the results
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/haoxuan/vscode/FastProject2/_notebooks/2023-03-16-database-example.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> if len(results) == 0:
+
+<span class="ansi-red-fg">OperationalError</span>: no such table: cars</pre>
 </div>
 </div>
 
@@ -359,6 +420,20 @@ None
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Perform Jupyter 'Run All' prior to starting menu
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
