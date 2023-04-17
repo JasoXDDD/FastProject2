@@ -417,7 +417,7 @@
         cards.forEach((card, index) => {
             card.classList.remove("flip");
             let imgTag = card.querySelector(".back-view img");
-            //alert(arr[index]);
+            alert(`_posts/images/img-${arr[index]}.png`);
             setTimeout(() => {
                 imgTag.src = `_posts/images/img-${arr[index]}.png`;
             }, 500);
