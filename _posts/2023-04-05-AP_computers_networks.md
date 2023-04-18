@@ -120,8 +120,9 @@ The "network" layer is responsible for ***routing data packets between networks*
         - No, if C comes down, then information can't be sent to F.
     - ![image]({{site.baseurl}}/images/network3.png)
         - No, if G comes down, then information can't be sent to A.
-    - C
-    - A
+    - C, Data can still be transmitted through other networks in there are multiple routes available
+    - A, A needs muliple routes that connects to it in case the node at F comes down.
+
 Fault Tolerance of a network means that multiple paths can be used to transport information from one node of the network to another, so that even if a node or path comes down, the information can still be sent while the original path gets fixed. The more paths the networks have, the more fault tolerance it have, but the minimum is about 2 paths to every node. The more paths a unit have, the more cost it will have, making a balance of two sides needed.
 
 ### Parallel and Distributed Computing
