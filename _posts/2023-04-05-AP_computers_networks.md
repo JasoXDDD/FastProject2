@@ -52,12 +52,12 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path - a
+    - Route - e
+    - Computer System - b
+    - Computer Device - c
+    - Bandwidth - d
+    - Computer Network - f
 
 > Watch/review College Board Daily Video 4.1.2
 
