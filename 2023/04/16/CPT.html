@@ -417,7 +417,7 @@
         for (let i=0;i<cardSet.length;i++){
             cardList[i].classList.remove("flipped");
             setTimeout(() => {
-                cardList[i].querySelector(".back-view img").src = `/images/img-${cardSet[i]}.png`;
+                cardList[i].querySelector(".back-view img").src = `/FastProject2/images/img-${cardSet[i]}.png`;
             }, 500);
             cardList[i].addEventListener("click", flip);
         }
